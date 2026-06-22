@@ -1,6 +1,6 @@
-/* ========================
-   PRIME CONTROL - ESTILOS
-========================= */
+/* ===================================================
+   PRIME CONTROL - ESTILOS GENERALES
+====================================================== */
 
 * {
     margin: 0;
@@ -16,14 +16,15 @@ body {
 }
 
 /* CONTENEDOR GENERAL */
-
 .container {
     width: 90%;
     max-width: 1200px;
     margin: auto;
 }
 
-/* ENCABEZADO */
+/* ===================================================
+   ENCABEZADO Y MENÚ
+====================================================== */
 
 header {
     background: #0b1f3a;
@@ -46,8 +47,6 @@ header h1 {
     font-size: 18px;
 }
 
-/* MENU */
-
 nav {
     margin-top: 20px;
 }
@@ -64,7 +63,9 @@ nav a:hover {
     color: #d4af37;
 }
 
-/* PORTADA */
+/* ===================================================
+   PORTADA (HERO)
+====================================================== */
 
 .hero {
     background:
@@ -97,7 +98,6 @@ nav a:hover {
 }
 
 /* BOTONES */
-
 .btn {
     display: inline-block;
     margin-top: 30px;
@@ -114,8 +114,7 @@ nav a:hover {
     background: white;
 }
 
-/* SECCIONES */
-
+/* SECCIONES COMPARTIDAS */
 section {
     padding: 70px 0;
 }
@@ -127,41 +126,52 @@ section h2 {
     margin-bottom: 30px;
 }
 
-/* NOSOTROS */
+/* ===================================================
+   SECCIÓN NOSOTROS
+====================================================== */
 
 #nosotros p {
     text-align: center;
     max-width: 900px;
-    margin: auto;
+    margin: auto auto 20px auto;
     font-size: 18px;
 }
 
-/* TARJETAS SERVICIOS */
+/* ===================================================
+   TARJETAS SERVICIOS
+====================================================== */
 
 .cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
+    width: 100%;
 }
 
 .card {
     background: white;
     width: 320px;
+    max-width: 100%;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     transition: 0.3s;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
     transform: translateY(-10px);
 }
 
+/* Control estricto de proporciones de imagen */
 .card img {
     width: 100%;
-    height: 180px;
+    height: 200px;
+    max-height: 200px;
     object-fit: cover;
+    object-position: center;
     display: block;
 }
 
@@ -172,21 +182,26 @@ section h2 {
 
 .card p {
     padding: 0 20px 25px 20px;
+    font-size: 15px;
 }
 
-/* METODOLOGIA */
+/* ===================================================
+   METODOLOGÍA Y BENEFICIOS
+====================================================== */
 
 .pasos {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
 }
 
 .pasos div {
     background: white;
     flex: 1;
     min-width: 220px;
+    max-width: 280px;
     padding: 25px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
@@ -197,7 +212,51 @@ section h2 {
     margin-bottom: 10px;
 }
 
-/* CONTACTO */
+/* ===================================================
+   SECCIÓN EXPERIENCIA / INDICADORES
+====================================================== */
+
+#experiencia {
+    background: #0b1f3a;
+    color: white;
+    text-align: center;
+}
+
+#experiencia h2 {
+    color: white;
+    margin-bottom: 40px;
+}
+
+.indicadores {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: 100%;
+}
+
+.indicador {
+    text-align: center;
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+}
+
+.indicador h3 {
+    font-size: 42px;
+    color: #d4af37;
+    margin-bottom: 5px;
+}
+
+.indicador p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+/* ===================================================
+   CONTACTO Y PIE DE PÁGINA
+====================================================== */
 
 #contacto {
     background: #0b1f3a;
@@ -214,46 +273,16 @@ section h2 {
     font-size: 18px;
 }
 
-/* PIE DE PAGINA */
-
 footer {
     background: #061221;
     color: white;
     text-align: center;
     padding: 20px;
 }
-/* EXPERIENCIA */
 
-#experiencia {
-    background: #0b1f3a;
-    color: white;
-}
-
-#experiencia h2 {
-    color: white;
-}
-
-.indicadores {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.indicador {
-    text-align: center;
-    min-width: 200px;
-}
-
-.indicador h3 {
-    font-size: 42px;
-    color: #d4af37;
-}
-
-.indicador p {
-    font-size: 18px;
-}
-/* VERSION CELULAR */
+/* ===================================================
+   RESPONSIVE DESIGN (MÓVILES)
+====================================================== */
 
 @media(max-width: 768px) {
 
@@ -276,5 +305,10 @@ footer {
 
     .card {
         width: 100%;
+    }
+
+    .indicadores {
+        flex-direction: column;
+        gap: 30px;
     }
 }
