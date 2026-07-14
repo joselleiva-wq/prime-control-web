@@ -1,280 +1,830 @@
-/* ========================
-   PRIME CONTROL - ESTILOS
-========================= */
+/* =====================================================
+   PRIME CONTROL CONSULTING
+   CSS CORPORATIVO 2026
+===================================================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f7fa;
-    color: #333;
+html{
+    scroll-behavior:smooth;
 }
 
-/* CONTENEDOR GENERAL */
+body{
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fa;
+    color:#333;
+    line-height:1.7;
+
 }
 
-/* ENCABEZADO */
+/*=====================================================
+CONTENEDOR
+=====================================================*/
 
-header {
-    background: #0b1f3a;
-    color: white;
-    padding: 25px 0;
-    text-align: center;
+.container{
+
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+
 }
 
-header h1 {
-    font-size: 48px;
-    letter-spacing: 4px;
-    color: white;
-    text-transform: uppercase;
-    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+/*=====================================================
+HEADER
+=====================================================*/
+
+header{
+
+    background:#0b1f3a;
+    color:#fff;
+    text-align:center;
+    padding:25px 0;
+    box-shadow:0 4px 15px rgba(0,0,0,.25);
+
 }
 
-.slogan {
-    color: #d4af37;
-    margin-top: 10px;
-    font-size: 18px;
+header h1{
+
+    font-size:48px;
+    letter-spacing:5px;
+    text-transform:uppercase;
+    color:#fff;
+    text-shadow:0 4px 10px rgba(0,0,0,.5);
+
 }
 
-/* MENU */
+.slogan{
 
-nav {
-    margin-top: 20px;
+    color:#d4af37;
+    font-size:18px;
+    margin-top:8px;
+
 }
 
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: 0.3s;
+/*=====================================================
+MENU
+=====================================================*/
+
+nav{
+
+    margin-top:25px;
+
 }
 
-nav a:hover {
-    color: #d4af37;
+nav a{
+
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+    transition:.3s;
+
 }
 
-/* PORTADA */
+nav a:hover{
 
-.hero {
+    color:#d4af37;
+
+}
+
+/*=====================================================
+HERO
+=====================================================*/
+
+.hero{
+
     background:
-    linear-gradient(
-        rgba(11,31,58,0.75),
-        rgba(11,31,58,0.75)
-    ),
-    url('../img/hero.avif');
+    linear-gradient(rgba(11,31,58,.78),rgba(11,31,58,.78)),
+    url("../img/hero.avif");
 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 
-    color: white;
-    text-align: center;
-    padding: 180px 20px;
+    color:white;
+
+    text-align:center;
+
+    padding:180px 20px;
+
 }
 
-.hero h2 {
-    font-size: 42px;
-    margin-bottom: 20px;
-    color: white;
-    text-shadow: 0 4px 12px rgba(0,0,0,0.7);
+.hero h2{
+
+    font-size:46px;
+
+    max-width:900px;
+
+    margin:auto;
+
+    margin-bottom:25px;
+
+    text-shadow:0 4px 12px rgba(0,0,0,.7);
+
 }
 
-.hero p {
-    font-size: 20px;
-    max-width: 800px;
-    margin: auto;
+.hero p{
+
+    font-size:21px;
+
+    max-width:850px;
+
+    margin:auto;
+
 }
 
-/* BOTONES */
+.btn{
 
-.btn {
-    display: inline-block;
-    margin-top: 30px;
-    background: #d4af37;
-    color: #0b1f3a;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    transition: 0.3s;
+    display:inline-block;
+
+    margin-top:35px;
+
+    background:#d4af37;
+
+    color:#0b1f3a;
+
+    padding:16px 35px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:.35s;
+
 }
 
-.btn:hover {
-    background: white;
+.btn:hover{
+
+    background:white;
+
+    transform:translateY(-3px);
+
 }
 
-/* SECCIONES */
+/*=====================================================
+SECCIONES
+=====================================================*/
 
-section {
-    padding: 70px 0;
+section{
+
+    padding:80px 0;
+
 }
 
-section h2 {
-    text-align: center;
-    font-size: 34px;
-    color: #0b1f3a;
-    margin-bottom: 30px;
+section h2{
+
+    text-align:center;
+
+    color:#0b1f3a;
+
+    font-size:36px;
+
+    margin-bottom:35px;
+
 }
 
-/* NOSOTROS */
+/*=====================================================
+NOSOTROS
+=====================================================*/
 
-#nosotros p {
-    text-align: center;
-    max-width: 900px;
-    margin: auto;
-    font-size: 18px;
+#nosotros{
+
+    background:white;
+
 }
 
-/* TARJETAS SERVICIOS */
+#nosotros p{
 
-.cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 25px;
+    max-width:950px;
+
+    margin:25px auto;
+
+    text-align:center;
+
+    font-size:18px;
+
 }
 
-.card {
-    background: white;
-    width: 320px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-    transition: 0.3s;
+/*=====================================================
+BENEFICIOS
+=====================================================*/
+
+#beneficios{
+
+    background:#f7f8fb;
+
 }
 
-.card:hover {
-    transform: translateY(-10px);
+.pasos{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:25px;
+
 }
 
-.card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
+.pasos div{
+
+    flex:1;
+
+    min-width:230px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+    text-align:center;
+
+    transition:.3s;
+
 }
 
-.card h3 {
-    color: #0b1f3a;
-    margin: 20px 20px 15px 20px;
+.pasos div:hover{
+
+    transform:translateY(-8px);
+
 }
 
-.card p {
-    padding: 0 20px 25px 20px;
+.pasos h3{
+
+    color:#d4af37;
+
+    margin-bottom:15px;
+
 }
 
-/* METODOLOGIA */
+/*=====================================================
+EXPERIENCIA
+=====================================================*/
 
-.pasos {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    text-align: center;
+#experiencia{
+
+    background:#0b1f3a;
+
+    color:white;
+
 }
 
-.pasos div {
-    background: white;
-    flex: 1;
-    min-width: 220px;
-    padding: 25px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+#experiencia h2{
+
+    color:white;
+
 }
 
-.pasos h3 {
-    color: #d4af37;
-    margin-bottom: 10px;
+.indicadores{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:40px;
+
 }
 
-/* CONTACTO */
+.indicador{
 
-#contacto {
-    background: #0b1f3a;
-    color: white;
-    text-align: center;
+    min-width:200px;
+
+    text-align:center;
+
 }
 
-#contacto h2 {
-    color: white;
+.indicador h3{
+
+    color:#d4af37;
+
+    font-size:48px;
+
 }
 
-.correo {
-    margin-top: 25px;
-    font-size: 18px;
+.indicador p{
+
+    font-size:18px;
+
 }
 
-/* PIE DE PAGINA */
+/*=====================================================
+SOCIOS FUNDADORES
+=====================================================*/
 
-footer {
-    background: #061221;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-/* EXPERIENCIA */
+#fundadores{
 
-#experiencia {
-    background: #0b1f3a;
-    color: white;
+    background:white;
+
 }
 
-#experiencia h2 {
-    color: white;
+#fundadores .intro{
+
+    max-width:950px;
+
+    margin:0 auto 50px;
+
+    text-align:center;
+
+    font-size:18px;
+
 }
 
-.indicadores {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 30px;
+.cards{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
 }
 
-.indicador {
-    text-align: center;
-    min-width: 200px;
+.card{
+
+    background:white;
+
+    width:520px;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+    padding:40px;
+
+    transition:.3s;
+
 }
 
-.indicador h3 {
-    font-size: 42px;
-    color: #d4af37;
+.card:hover{
+
+    transform:translateY(-10px);
+
 }
 
-.indicador p {
-    font-size: 18px;
+#fundadores .card{
+
+    text-align:center;
+
 }
-/* VERSION CELULAR */
 
-@media(max-width: 768px) {
+#fundadores .card h3{
 
-    header h1 {
-        font-size: 28px;
+    color:#0b1f3a;
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+#fundadores .card h4{
+
+    color:#d4af37;
+
+    font-size:18px;
+
+    margin-bottom:25px;
+
+    font-weight:600;
+
+}
+
+#fundadores .card p{
+
+    padding:0;
+
+    margin:0 auto;
+
+    max-width:420px;
+
+    font-size:17px;
+
+    text-align:center;
+
+    line-height:1.9;
+
+}
+
+#fundadores h3:last-of-type{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    color:#0b1f3a;
+
+}
+/*=====================================================
+SERVICIOS
+=====================================================*/
+
+#servicios{
+
+    background:#f5f7fa;
+
+}
+
+#servicios .cards{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+
+}
+
+#servicios .card{
+
+    width:340px;
+
+    padding:0;
+
+    overflow:hidden;
+
+}
+
+#servicios .card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+#servicios .card h3{
+
+    color:#0b1f3a;
+
+    text-align:center;
+
+    margin:25px 20px 15px;
+
+    font-size:22px;
+
+}
+
+#servicios .card p{
+
+    padding:0 25px 30px;
+
+    text-align:center;
+
+    font-size:16px;
+
+    line-height:1.8;
+
+}
+
+/*=====================================================
+METODOLOGÍA
+=====================================================*/
+
+#metodologia{
+
+    background:white;
+
+}
+
+#metodologia .pasos{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:25px;
+
+}
+
+#metodologia .pasos div{
+
+    background:#f7f8fb;
+
+    border-radius:12px;
+
+    padding:35px;
+
+    min-width:230px;
+
+    flex:1;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.08);
+
+}
+
+#metodologia .pasos h3{
+
+    color:#0b1f3a;
+
+    margin-bottom:15px;
+
+}
+
+/*=====================================================
+CTA
+=====================================================*/
+
+.cta{
+
+    background:#d4af37;
+
+    color:#0b1f3a;
+
+    text-align:center;
+
+}
+
+.cta h2{
+
+    color:#0b1f3a;
+
+    max-width:900px;
+
+    margin:auto auto 25px;
+
+}
+
+.cta p{
+
+    font-size:20px;
+
+    max-width:800px;
+
+    margin:auto;
+
+}
+
+.cta .btn{
+
+    background:#0b1f3a;
+
+    color:white;
+
+}
+
+.cta .btn:hover{
+
+    background:white;
+
+    color:#0b1f3a;
+
+}
+
+/*=====================================================
+CONTACTO
+=====================================================*/
+
+#contacto{
+
+    background:#0b1f3a;
+
+    color:white;
+
+    text-align:center;
+
+}
+
+#contacto h2{
+
+    color:white;
+
+}
+
+#contacto p{
+
+    font-size:18px;
+
+}
+
+.correo{
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    margin-top:25px;
+
+    color:#d4af37;
+
+}
+
+/*=====================================================
+FOOTER
+=====================================================*/
+
+footer{
+
+    background:#061221;
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+/*=====================================================
+ANIMACIONES
+=====================================================*/
+
+.card,
+.pasos div,
+.btn{
+
+    transition:all .35s ease;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+/*=====================================================
+RESPONSIVE
+=====================================================*/
+
+@media(max-width:992px){
+
+    .card{
+
+        width:100%;
+
+        max-width:600px;
+
     }
 
-    .hero h2 {
-        font-size: 30px;
+    .indicadores{
+
+        gap:25px;
+
     }
 
-    .hero p {
-        font-size: 17px;
+}
+
+@media(max-width:768px){
+
+    header h1{
+
+        font-size:32px;
+
+        letter-spacing:2px;
+
     }
 
-    nav a {
-        display: block;
-        margin: 10px 0;
+    .slogan{
+
+        font-size:16px;
+
     }
 
-    .card {
-        width: 100%;
+    nav a{
+
+        display:block;
+
+        margin:12px 0;
+
     }
+
+    .hero{
+
+        padding:120px 20px;
+
+    }
+
+    .hero h2{
+
+        font-size:32px;
+
+    }
+
+    .hero p{
+
+        font-size:18px;
+
+    }
+
+    section{
+
+        padding:60px 0;
+
+    }
+
+    section h2{
+
+        font-size:30px;
+
+    }
+
+    .cards{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+    .card{
+
+        width:100%;
+
+        max-width:420px;
+
+    }
+
+    .pasos{
+
+        flex-direction:column;
+
+    }
+
+    .indicadores{
+
+        flex-direction:column;
+
+        gap:35px;
+
+    }
+
+}
+
+@media(max-width:480px){
+
+    header h1{
+
+        font-size:26px;
+
+    }
+
+    .hero h2{
+
+        font-size:28px;
+
+    }
+
+    .hero p{
+
+        font-size:16px;
+
+    }
+
+    .btn{
+
+        width:100%;
+
+        max-width:320px;
+
+    }
+
+    .card{
+
+        padding:30px;
+
+    }
+
+    #servicios .card{
+
+        padding:0;
+
+    }
+
 }
