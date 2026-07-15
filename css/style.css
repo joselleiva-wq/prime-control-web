@@ -70,33 +70,33 @@ header {
     font-weight: 500;
 }
 
-/* Esconder el botón móvil en computadoras */
+/* Esconder elementos móviles en computadoras de forma estricta */
 .menu-checkbox, 
 .menu-button {
     display: none !important;
 }
 
-/* Menú de Navegación (Soporta nav y .nav-menu) */
-nav, .nav-menu {
-    display: flex;
+/* Menú de Navegación en Escritorio */
+.nav-menu {
+    display: flex !important; /* Garantiza que se vea en desktop */
     gap: 20px;
     align-items: center;
 }
 
-nav a, .nav-menu a {
-    color: #ffffff !important; /* Fuerza las letras blancas sobre el fondo azul del header */
+.nav-menu a {
+    color: #ffffff !important;
     text-decoration: none;
     font-weight: bold;
     font-size: 16px;
     transition: 0.3s;
 }
 
-nav a:hover, .nav-menu a:hover {
+.nav-menu a:hover {
     color: #d4af37 !important;
 }
 
 /* Botón de contacto estilizado */
-nav .nav-btn, .nav-menu .nav-btn {
+.nav-menu .nav-btn {
     background-color: #d4af37;
     color: #0b1f3a !important;
     padding: 8px 20px;
@@ -104,7 +104,7 @@ nav .nav-btn, .nav-menu .nav-btn {
     transition: all 0.3s ease;
 }
 
-nav .nav-btn:hover, .nav-menu .nav-btn:hover {
+.nav-menu .nav-btn:hover {
     background-color: #ffffff;
     color: #0b1f3a !important;
 }
@@ -570,7 +570,7 @@ RESPONSIVE GENERAL
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #0b1f3a !important; /* Azul marino corporativo */
+        background-color: #0b1f3a !important; 
         z-index: 1000;
         box-shadow: 0 2px 10px rgba(0,0,0,0.3);
         padding: 15px 0;
@@ -585,7 +585,6 @@ RESPONSIVE GENERAL
         width: 100%;
     }
 
-    /* Logotipo Ajustado */
     .logo-area {
         display: flex;
         flex-direction: column;
@@ -603,11 +602,6 @@ RESPONSIVE GENERAL
         font-size: 0.7rem;
         color: #d4af37 !important;
         margin-top: 2px;
-    }
-
-    /* Ocultar el Slogan común en móviles */
-    header .slogan {
-        display: none !important;
     }
 
     /* --- Botón Hamburguesa --- */
@@ -629,19 +623,19 @@ RESPONSIVE GENERAL
         transition: all 0.3s ease;
     }
 
-    /* Checkbox oculto */
+    /* Checkbox permanece oculto */
     .menu-checkbox {
         display: none !important;
     }
 
-    /* --- Menú Desplegable (Soporta nav y .nav-menu) --- */
-    nav, .nav-menu {
+    /* --- El Menú Lateral --- */
+    .nav-menu {
         position: fixed !important;
         top: 0;
-        right: -100% !important; /* Esconde el menú a la derecha */
+        right: -100% !important; /* Escondido por defecto a la derecha */
         width: 260px !important;
         height: 100vh !important;
-        background-color: #081930 !important; /* Azul marino muy oscuro para contraste */
+        background-color: #081930 !important; /* Fondo azul marino oscuro para contraste */
         display: flex !important;
         flex-direction: column !important;
         justify-content: center !important;
@@ -653,8 +647,8 @@ RESPONSIVE GENERAL
         margin-top: 0 !important;
     }
 
-    nav a, .nav-menu a {
-        color: #ffffff !important; /* Asegura que las letras sigan siendo blancas */
+    .nav-menu a {
+        color: #ffffff !important; /* Letras blancas para perfecta legibilidad */
         font-size: 1.2rem !important;
         display: block !important;
         text-align: center;
@@ -662,12 +656,12 @@ RESPONSIVE GENERAL
         padding: 10px 0;
     }
 
-    nav a:hover, .nav-menu a:hover {
+    .nav-menu a:hover {
         color: #d4af37 !important;
     }
 
     /* Botón de contacto interno en móvil */
-    nav .nav-btn, .nav-menu .nav-btn {
+    .nav-menu .nav-btn {
         background-color: #d4af37 !important;
         color: #081930 !important;
         padding: 12px 25px !important;
@@ -676,13 +670,12 @@ RESPONSIVE GENERAL
         width: auto !important;
     }
 
-    /* --- Acciones de Apertura (Checkbox Activado) --- */
-    .menu-checkbox:checked ~ nav,
+    /* --- Mostrar el menú al activar el Checkbox --- */
     .menu-checkbox:checked ~ .nav-menu {
-        right: 0 !important; /* Desplaza el menú hacia la pantalla */
+        right: 0 !important; /* Desplaza el menú hacia la vista */
     }
 
-    /* Animación de la Hamburguesa a "X" */
+    /* Transformación del ícono hamburguesa a "X" */
     .menu-checkbox:checked ~ .menu-button span:nth-child(1) {
         transform: translateY(8px) rotate(45deg) !important;
     }
@@ -695,7 +688,7 @@ RESPONSIVE GENERAL
         transform: translateY(-8px) rotate(-45deg) !important;
     }
 
-    /* Desplazar el hero hacia abajo para que el menú fijo superior no lo tape */
+    /* Evita que el header fijo pise el inicio de la web */
     .hero {
         margin-top: 60px !important;
     }
