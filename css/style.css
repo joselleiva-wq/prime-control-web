@@ -1,6 +1,6 @@
 /* =====================================================
    PRIME CONTROL CONSULTING
-   CSS CORPORATIVO 2026
+   CSS CORPORATIVO 2026 (OPTIMIZADO Y CORREGIDO)
 ===================================================== */
 
 *{
@@ -14,12 +14,10 @@ html{
 }
 
 body{
-
     font-family:Arial, Helvetica, sans-serif;
     background:#f5f7fa;
     color:#333;
     line-height:1.7;
-
 }
 
 /*=====================================================
@@ -27,73 +25,11 @@ CONTENEDOR
 =====================================================*/
 
 .container{
-
     width:90%;
     max-width:1200px;
     margin:auto;
-
 }
 
-/*=====================================================
-HEADER
-=====================================================*/
-
-header{
-
-    background:#0b1f3a;
-    color:#fff;
-    text-align:center;
-    padding:25px 0;
-    box-shadow:0 4px 15px rgba(0,0,0,.25);
-
-}
-
-header h1{
-
-    font-size:48px;
-    letter-spacing:5px;
-    text-transform:uppercase;
-    color:#fff;
-    text-shadow:0 4px 10px rgba(0,0,0,.5);
-
-}
-
-.slogan{
-
-    color:#d4af37;
-    font-size:18px;
-    margin-top:8px;
-
-}
-
-/*=====================================================
-MENU
-=====================================================*/
-
-nav{
-
-    margin-top:25px;
-
-}
-
-nav a{
-
-    color:#fff;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-    transition:.3s;
-
-}
-
-nav a:hover{
-
-    color:#d4af37;
-
-}
-Paso B: Pega exactamente este bloque en el espacio que acaba de quedar vacío:
-
-CSS
 /*=====================================================
 HEADER OPTIMIZADO (COMPUTADOR)
 =====================================================*/
@@ -162,7 +98,7 @@ header {
 /* Botón de contacto estilizado */
 .nav-menu .nav-btn {
     background-color: #d4af37;
-    color: #0b1f3a;
+    color: #0b1f3a !important;
     padding: 8px 20px;
     border-radius: 20px;
     transition: all 0.3s ease;
@@ -170,7 +106,56 @@ header {
 
 .nav-menu .nav-btn:hover {
     background-color: #ffffff;
-    color: #0b1f3a;
+    color: #0b1f3a !important;
+}
+
+/*=====================================================
+HERO
+=====================================================*/
+
+.hero{
+    background:
+    linear-gradient(rgba(11,31,58,.78),rgba(11,31,58,.78)),
+    url("../img/hero.avif");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    color:white;
+    text-align:center;
+    padding:180px 20px;
+}
+
+.hero h2{
+    font-size:46px;
+    max-width:900px;
+    margin:auto;
+    margin-bottom:25px;
+    text-shadow:0 4px 12px rgba(0,0,0,.7);
+}
+
+.hero p{
+    font-size:21px;
+    max-width:850px;
+    margin:auto;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:35px;
+    background:#d4af37;
+    color:#0b1f3a;
+    padding:16px 35px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.35s;
+}
+
+.btn:hover{
+    background:white;
+    transform:translateY(-3px);
 }
 
 /*=====================================================
@@ -178,21 +163,14 @@ SECCIONES
 =====================================================*/
 
 section{
-
     padding:80px 0;
-
 }
 
 section h2{
-
     text-align:center;
-
     color:#0b1f3a;
-
     font-size:36px;
-
     margin-bottom:35px;
-
 }
 
 /*=====================================================
@@ -200,21 +178,14 @@ NOSOTROS
 =====================================================*/
 
 #nosotros{
-
     background:white;
-
 }
 
 #nosotros p{
-
     max-width:950px;
-
     margin:25px auto;
-
     text-align:center;
-
     font-size:18px;
-
 }
 
 /*=====================================================
@@ -222,55 +193,34 @@ BENEFICIOS
 =====================================================*/
 
 #beneficios{
-
     background:#f7f8fb;
-
 }
 
 .pasos{
-
     display:flex;
-
     flex-wrap:wrap;
-
     justify-content:center;
-
     gap:25px;
-
 }
 
 .pasos div{
-
     flex:1;
-
     min-width:230px;
-
     background:white;
-
     padding:30px;
-
     border-radius:12px;
-
     box-shadow:0 5px 18px rgba(0,0,0,.08);
-
     text-align:center;
-
     transition:.3s;
-
 }
 
 .pasos div:hover{
-
     transform:translateY(-8px);
-
 }
 
 .pasos h3{
-
     color:#d4af37;
-
     margin-bottom:15px;
-
 }
 
 /*=====================================================
@@ -278,51 +228,33 @@ EXPERIENCIA
 =====================================================*/
 
 #experiencia{
-
     background:#0b1f3a;
-
     color:white;
-
 }
 
 #experiencia h2{
-
     color:white;
-
 }
 
 .indicadores{
-
     display:flex;
-
     flex-wrap:wrap;
-
     justify-content:center;
-
     gap:40px;
-
 }
 
 .indicador{
-
     min-width:200px;
-
     text-align:center;
-
 }
 
 .indicador h3{
-
     color:#d4af37;
-
     font-size:48px;
-
 }
 
 .indicador p{
-
     font-size:18px;
-
 }
 
 /*=====================================================
@@ -330,176 +262,108 @@ SOCIOS FUNDADORES
 =====================================================*/
 
 #fundadores{
-
     background:white;
-
 }
 
 #fundadores .intro{
-
     max-width:950px;
-
     margin:0 auto 50px;
-
     text-align:center;
-
     font-size:18px;
-
 }
 
 .cards{
-
     display:flex;
-
     flex-wrap:wrap;
-
     justify-content:center;
-
     gap:30px;
-
 }
 
 .card{
-
     background:white;
-
     width:520px;
-
     border-radius:12px;
-
     box-shadow:0 8px 25px rgba(0,0,0,.12);
-
     padding:40px;
-
     transition:.3s;
-
 }
 
 .card:hover{
-
     transform:translateY(-10px);
-
 }
 
 #fundadores .card{
-
     text-align:center;
-
 }
 
 #fundadores .card h3{
-
     color:#0b1f3a;
-
     font-size:30px;
-
     margin-bottom:10px;
-
 }
 
 #fundadores .card h4{
-
     color:#d4af37;
-
     font-size:18px;
-
     margin-bottom:25px;
-
     font-weight:600;
-
 }
 
 #fundadores .card p{
-
     padding:0;
-
     margin:0 auto;
-
     max-width:420px;
-
     font-size:17px;
-
     text-align:center;
-
     line-height:1.9;
-
 }
 
 #fundadores h3:last-of-type{
-
     margin-top:40px;
-
     text-align:center;
-
     color:#0b1f3a;
-
 }
+
 /*=====================================================
 SERVICIOS
 =====================================================*/
 
 #servicios{
-
     background:#f5f7fa;
-
 }
 
 #servicios .cards{
-
     display:flex;
-
     flex-wrap:wrap;
-
     justify-content:center;
-
     gap:30px;
-
 }
 
 #servicios .card{
-
     width:340px;
-
     padding:0;
-
     overflow:hidden;
-
 }
 
 #servicios .card img{
-
     width:100%;
-
     height:220px;
-
     object-fit:cover;
-
     display:block;
-
 }
 
 #servicios .card h3{
-
     color:#0b1f3a;
-
     text-align:center;
-
     margin:25px 20px 15px;
-
     font-size:22px;
-
 }
 
 #servicios .card p{
-
     padding:0 25px 30px;
-
     text-align:center;
-
     font-size:16px;
-
     line-height:1.8;
-
 }
 
 /*=====================================================
@@ -507,45 +371,28 @@ METODOLOGÍA
 =====================================================*/
 
 #metodologia{
-
     background:white;
-
 }
 
 #metodologia .pasos{
-
     display:flex;
-
     flex-wrap:wrap;
-
     justify-content:center;
-
     gap:25px;
-
 }
 
 #metodologia .pasos div{
-
     background:#f7f8fb;
-
     border-radius:12px;
-
     padding:35px;
-
     min-width:230px;
-
     flex:1;
-
     box-shadow:0 5px 18px rgba(0,0,0,.08);
-
 }
 
 #metodologia .pasos h3{
-
     color:#0b1f3a;
-
     margin-bottom:15px;
-
 }
 
 /*=====================================================
@@ -553,49 +400,31 @@ CTA
 =====================================================*/
 
 .cta{
-
     background:#d4af37;
-
     color:#0b1f3a;
-
     text-align:center;
-
 }
 
 .cta h2{
-
     color:#0b1f3a;
-
     max-width:900px;
-
     margin:auto auto 25px;
-
 }
 
 .cta p{
-
     font-size:20px;
-
     max-width:800px;
-
     margin:auto;
-
 }
 
 .cta .btn{
-
     background:#0b1f3a;
-
     color:white;
-
 }
 
 .cta .btn:hover{
-
     background:white;
-
     color:#0b1f3a;
-
 }
 
 /*=====================================================
@@ -603,37 +432,24 @@ CONTACTO
 =====================================================*/
 
 #contacto{
-
     background:#0b1f3a;
-
     color:white;
-
     text-align:center;
-
 }
 
 #contacto h2{
-
     color:white;
-
 }
 
 #contacto p{
-
     font-size:18px;
-
 }
 
 .correo{
-
     font-size:22px;
-
     font-weight:bold;
-
     margin-top:25px;
-
     color:#d4af37;
-
 }
 
 /*=====================================================
@@ -641,21 +457,14 @@ FOOTER
 =====================================================*/
 
 footer{
-
     background:#061221;
-
     color:white;
-
     text-align:center;
-
     padding:35px 20px;
-
 }
 
 footer p{
-
     margin:8px 0;
-
 }
 
 /*=====================================================
@@ -665,23 +474,16 @@ ANIMACIONES
 .card,
 .pasos div,
 .btn{
-
     transition:all .35s ease;
-
 }
 
 .btn:hover{
-
     transform:translateY(-3px);
-
 }
 
 .card:hover{
-
     transform:translateY(-10px);
-
     box-shadow:0 15px 35px rgba(0,0,0,.18);
-
 }
 
 /*=====================================================
@@ -689,171 +491,102 @@ RESPONSIVE
 =====================================================*/
 
 @media(max-width:992px){
-
     .card{
-
         width:100%;
-
         max-width:600px;
-
     }
 
     .indicadores{
-
         gap:25px;
-
     }
-
 }
 
 @media(max-width:768px){
-
-    header h1{
-
-        font-size:32px;
-
-        letter-spacing:2px;
-
-    }
-
-    .slogan{
-
-        font-size:16px;
-
-    }
-
-    nav a{
-
-        display:block;
-
-        margin:12px 0;
-
-    }
-
     .hero{
-
         padding:120px 20px;
-
     }
 
     .hero h2{
-
         font-size:32px;
-
     }
 
     .hero p{
-
         font-size:18px;
-
     }
 
     section{
-
         padding:60px 0;
-
     }
 
     section h2{
-
         font-size:30px;
-
     }
 
     .cards{
-
         flex-direction:column;
-
         align-items:center;
-
     }
 
     .card{
-
         width:100%;
-
         max-width:420px;
-
     }
 
     .pasos{
-
         flex-direction:column;
-
     }
 
     .indicadores{
-
         flex-direction:column;
-
         gap:35px;
-
     }
-
 }
 
 @media(max-width:480px){
-
-    header h1{
-
-        font-size:26px;
-
-    }
-
     .hero h2{
-
         font-size:28px;
-
     }
 
     .hero p{
-
         font-size:16px;
-
     }
 
     .btn{
-
         width:100%;
-
         max-width:320px;
-
     }
 
     .card{
-
         padding:30px;
-
     }
 
     #servicios .card{
-
         padding:0;
-
     }
-
 }
-/* ================= DISPOSITIVOS MÓVILES (Media Query) ================= */
+
+/* ================= DISPOSITIVOS MÓVILES (MENÚ HAMBURGUESA) ================= */
 @media (max-width: 768px) {
     header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #0b2240; /* Tu azul corporativo oscuro */
+        background-color: #0b1f3a;
         z-index: 1000;
         box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        padding: 15px 0; /* Ajuste para que no sea gigante en móvil */
     }
 
     .header-flex {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 15px 20px;
+        padding: 0 20px;
         position: relative;
     }
 
-    /* Ajuste del área del Logo para que no ocupe tanto espacio */
+    /* Ajuste del área del Logo */
     .logo-area {
         display: flex;
         flex-direction: column;
@@ -869,7 +602,7 @@ RESPONSIVE
 
     .logo-sub {
         font-size: 0.7rem;
-        color: #d4af37; /* Color dorado/amarillo corporativo de tus slogans */
+        color: #d4af37;
         margin-top: 2px;
     }
 
@@ -935,7 +668,7 @@ RESPONSIVE
     /* Botón de contacto destacado dentro del menú */
     .nav-menu .nav-btn {
         background-color: #d4af37;
-        color: #081930;
+        color: #081930 !important;
         padding: 10px 20px;
         border-radius: 4px;
         font-weight: bold;
@@ -961,6 +694,6 @@ RESPONSIVE
 
     /* Margen superior al Hero para que el header fijo no lo tape */
     .hero {
-        margin-top: 60px;
+        margin-top: 80px;
     }
 }
