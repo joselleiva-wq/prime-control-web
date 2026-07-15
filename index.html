@@ -22,7 +22,35 @@
 
     <!-- ================= HEADER ================= -->
 
-   <div class="container">
+  <header>
+    <div class="container header-flex">
+        <!-- Área de Marca / Logotipo -->
+        <div class="logo-area">
+            <span class="logo-title">PRIME CONTROL</span>
+            <span class="logo-sub">Audit & Financial Consulting</span>
+        </div>
+
+        <!-- 1. Checkbox oculto con la ID exacta (DEBE ir aquí arriba) -->
+        <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+        <!-- 2. Botón Hamburguesa vinculado al checkbox por el atributo "for" -->
+        <label for="menu-toggle" class="menu-button">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <!-- 3. El Menú de Navegación (DEBE ser hermano directo del checkbox para que CSS lo controle) -->
+        <nav class="nav-menu">
+            <a href="#nosotros">Nosotros</a>
+            <a href="#beneficios">Beneficios</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#metodologia">Metodología</a>
+            <a href="#contacto" class="nav-btn">Contacto</a>
+        </nav>
+    </div>
+</header>
+    <div class="container">
 
             <h1>PRIME CONTROL</h1>
 
